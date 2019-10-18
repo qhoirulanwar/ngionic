@@ -1,6 +1,6 @@
 # Menambahkan component ionic 4 pada angular 8
 
-**1. install @ionic/angular** jalankan perintah berikut
+**1. install @ionic/angular**
 
 	$ npm i @ionic/angular
 
@@ -40,8 +40,7 @@
             ],
 
 **5. silahkan uji coba component ionic pada file component.html**
-
-kita coba tambahkan ion-button pada file src/app/app.component.html
+saya mencoba pada app.component.html
 
     <ion-button>Tombol</ion-button>
 
