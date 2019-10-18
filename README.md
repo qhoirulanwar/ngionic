@@ -1,3 +1,52 @@
+# Menambahkan component ionic 4 pada angular 8
+
+**1. install @ionic/angular** jalankan perintah berikut
+
+	$ npm i @ionic/angular
+
+**2. Tambahkan IonicModule pada app.module.ts**
+
+    import { IonicModule } from '@ionic/angular';
+
+    imports: [
+	    BrowserModule,
+	    IonicModule.forRoot()
+	  ]
+**3. Tambahkan assets build ionicons pada angular.json**
+
+    "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
+            ],
+**4. Tambahkan style build css ionic pada angular.json**
+
+    "styles": [
+              "src/styles.scss",
+              "./node_modules/@ionic/angular/css/core.css",
+              "./node_modules/@ionic/angular/css/normalize.css",
+              "./node_modules/@ionic/angular/css/structure.css",
+              "./node_modules/@ionic/angular/css/typography.css",
+              "./node_modules/@ionic/angular/css/display.css",
+              "./node_modules/@ionic/angular/css/padding.css",
+              "./node_modules/@ionic/angular/css/float-elements.css",
+              "./node_modules/@ionic/angular/css/text-alignment.css",
+              "./node_modules/@ionic/angular/css/text-transformation.css",
+              "./node_modules/@ionic/angular/css/flex-utils.css"
+            ],
+
+**5. silahkan uji coba component ionic pada file component.html**
+
+kita coba tambahkan ion-button pada file src/app/app.component.html
+
+    <ion-button>Tombol</ion-button>
+
+#
+
 # Ngionic
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.10.
